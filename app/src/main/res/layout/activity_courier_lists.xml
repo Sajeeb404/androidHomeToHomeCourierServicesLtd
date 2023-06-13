@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/courerListId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListCourier.CourierLists">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Courier List"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewUD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134">
+
+        <TextView
+            android:id="@+id/senderNamesID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" Sen_Name "
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/senderAddressID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" Sen_Address "
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/resiverNamesId"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" Res_Name "
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/resiverAddressID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" Res_Address "
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/actionID"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:textColor="@color/green"
+            android:text=" Action"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewUD"
+        android:layout_width="match_parent"
+        android:layout_height="547dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

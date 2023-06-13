@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ListCourier.CourierViewList"
+
+    >
+<TextView
+    android:id="@+id/titileid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="05dp"
+    android:gravity="center"
+    android:text="Your Courier View"
+    android:textColor="@color/black"
+    android:textSize="22dp"
+    android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/senderinofrmationid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titileid"
+        android:orientation="vertical"
+        android:background="@color/blueback"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/senderinformation"
+            android:id="@+id/tsendernameid"
+            android:layout_below="@id/titileid"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/sendernameidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/senderphnidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/senderaddressidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/senderbranchidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch Name :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/senderinofrmationid"
+        android:orientation="vertical"
+        android:background="@color/blueback"
+        android:id="@+id/resiverinofrmationid"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sresiverinformation"
+            android:id="@+id/tresivernameid"
+            android:layout_below="@id/titileid"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/resivernameidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/resiverphnidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/resiveraddressidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/resiverbranchidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch Name :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resiverinofrmationid"
+        android:orientation="vertical"
+        android:background="@color/blueback"
+        android:id="@+id/shipmentid"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shipmentinformation"
+            android:id="@+id/contenttypeid"
+            android:layout_below="@id/titileid"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/contenttypeidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content Type :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/contentnameidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conent Name :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/contentweigtidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contetn Weight :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/courierstatusidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Courier Status :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/priceidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipmentid"
+        android:orientation="vertical"
+        android:background="@color/blueback"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paymentinformation"
+            android:id="@+id/paymentmethodsid"
+            android:layout_below="@id/titileid"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/pamentmethodsidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/paymentstatusidview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Status :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="80dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
+<RelativeLayout
+    android:id="@+id/mainrelative"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ListCourier.CourierEditUpdate">
+
+<TextView
+    android:id="@+id/titileid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="05dp"
+    android:gravity="center"
+    android:text="Your Courier Edit Form"
+    android:textColor="@color/black"
+    android:textSize="22dp"
+    android:textStyle="bold" />
+
+<LinearLayout
+    android:id="@+id/senderinofrmationid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/titileid"
+    android:orientation="vertical"
+    android:background="@color/blueback"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/senderinformation"
+        android:id="@+id/tsendernameid"
+        android:layout_below="@id/titileid"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/sendernameidview"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Name :"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/updaeidname"
+        >
+    </EditText>
+
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/senderphnidupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Phone No :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/updaeidphn"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/senderaddressidupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Address :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/updaeidaddress"
+            >
+        </EditText>
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/senderbranchidupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Branch Name :"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+
+
+            />
+    <Spinner
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:id="@+id/senderupdaeidbranchd"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/branchName"
+        />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+<LinearLayout
+        android:id="@+id/resiverinofrmationid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/senderinofrmationid"
+        android:orientation="vertical"
+        android:background="@color/blueback"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sresiverinformation"
+            android:id="@+id/tresivernameid"
+            android:layout_below="@id/titileid"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/resivernameidview"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Name :"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/resiverupdaeidname"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/resiverphnidupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Phone No :"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <EditText
+            android:id="@+id/resiverupdaeidphn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:id="@+id/resiveraddressidupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Address :"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/resiverupdaeidaddress"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:id="@+id/resiverbranchidupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Branch Name :"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+
+
+                />
+
+            <Spinner
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:id="@+id/resiverupdaeidbranch"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/branchName"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+        android:id="@+id/shipmentinofrmationid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resiverinofrmationid"
+        android:orientation="vertical"
+        android:background="@color/blueback"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shipmentinformation"
+            android:id="@+id/shimentid"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/shimentcontenttypeidview"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Content Type :"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <Spinner
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:id="@+id/shipmentcontenttypeupdaeid"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/contentItem"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:id="@+id/shipmentcontentnameidupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Content Name :"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/shipmentupdaeidname"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:id="@+id/contenttweightidupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Content Weight :"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/shipmentweightida"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:id="@+id/totalpRiceidupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Total Priec :"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/totalpriceeditupdate"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/updateid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:backgroundTint="@color/blue"
+        android:layout_below="@id/shipmentinofrmationid"
+
+        />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>
